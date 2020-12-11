@@ -1,7 +1,7 @@
 import React from 'react'
 import './NavBar.css'
 
-export const NavBar = ({ toggleTheme }) => {
+export const NavBar = ({ toggleTheme, currentTheme }) => {
   return (
     <nav className='navbar'>
       <ul className='navbar-nav'>
