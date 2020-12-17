@@ -3,44 +3,31 @@ import { NavBar } from './components/NavBar'
 import './App.css'
 
 function App() {
-  // const [currentTheme, setCurrentTheme] = useState('dark')
+  const [currentTheme, setCurrentTheme] = useState('dark')
 
-  // useEffect(() => {
-  //   const theme = localStorage.getItem('theme')
+  const themes = {
+    dark: 'light',
+    light: 'solar',
+    solar: 'dark'
+  }
 
-  //   if (theme) {
-  //     setCurrentTheme(theme)
-  //   }
-  // }, [])
+  useEffect(() => {
+    const theme = localStorage.getItem('theme')
 
-  // const toggleTheme = async (e) => {
-  //   const selectedTheme = e.target.id
-  //   const solarBtn = document.querySelector('#solar')
-  //   if (currentTheme.includes('solar') && selectedTheme === 'solar') {
-  //     const updatedTheme = currentTheme.replace(' solar', '')
-  //     solarBtn.innerText = 'Solarize'
-  //     solarBtn.style.cssText = `
-  //       --bg-solar: var(--yellow);
-  //     `
-  //     setCurrentTheme(updatedTheme)
-  //     localStorage.setItem('theme', updatedTheme)
-  //   } else if (!currentTheme.includes('solar') && selectedTheme === 'solar') {
-  //     solarBtn.innerText = 'Normalize'
-  //     solarBtn.style.cssText = `
-  //       --bg-solar: white;
-  //     `
-  //     setCurrentTheme((current) => current + ' solar')
-  //     localStorage.setItem('theme', currentTheme + ' solar')
-  //   } else {
-  //     setCurrentTheme(selectedTheme)
-  //     localStorage.setItem('theme', selectedTheme)
-  //   }
-  // }
+    if (theme) {
+      setCurrentTheme(theme)
+    }
+  }, [])
+
+  const toggleTheme = (e) => {
+    const next = themes[currentTheme]
+    setCurrentTheme(next)
+    localStorage.setItem('theme', next)
+  }
 
   return (
     <div className='App'>
       <NavBar />
-
       <main>
         <h1>CSS is Cool</h1>
 
