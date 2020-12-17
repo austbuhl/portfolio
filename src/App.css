@@ -1,58 +1,18 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
   height: 100vh;
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
-  color: var(--text);
-  background: var(--bg);
-  transition: background 500ms ease-in-out, color 1000ms ease-in-out;
 }
 
-.light {
-  --bg: var(--gray0);
-  --bg-nav: linear-gradient(to right, var(--gray1), var(--gray3));
-  --bg-dropdown: var(--gray0);
-  --text: var(--gray6);
-  --border-color: var(--blue);
-  --bg-solar: var(--yellow);
+main {
+  margin-left: 5rem;
+  padding: 1rem;
 }
 
-.dark {
-  --bg: var(--gray5);
-  --bg-nav: linear-gradient(to right, var(--gray5), var(--gray6));
-  --bg-dropdown: var(--gray6);
-  --text: var(--gray0);
-  --border-color: var(--purple);
-  --bg-solar: var(--blue);
-}
-
-.solar {
-  --gray0: #fbffd4;
-  --gray1: #f7f8d0;
-  --gray2: #b6f880;
-  --gray3: #5ec72d;
-  --gray4: #3ea565;
-  --gray5: #005368;
-  --gray6: #003d4c;
-}
-
-#dark::before {
-  background: #2a2e35;
-}
-
-#light::before {
-  background: #ffffff;
-}
-
-#solar::before {
-  background: var(--bg-solar);
-}
-
-header {
+/* header {
   padding: 1em;
   background: gray;
   margin-bottom: 1em;
   padding-bottom: 3.5em;
-  clip-path: polygon(50% 0%, 100% 0, 100% 65%, 50% 100%, 0 65%, 0 0);
-}
+} */
