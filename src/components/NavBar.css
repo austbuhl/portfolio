@@ -2,7 +2,8 @@
   position: fixed;
   width: 5rem;
   height: 100vh;
-  background-color: var(--bg-primary);
+  background-color: #0a131f;
+  color: #e0e1dd;
   transition: width 400ms ease;
   /* overflow: scroll; */
 }
@@ -21,8 +22,9 @@
   width: 100%;
 }
 
-.nav-item:last-child {
-  margin-top: auto;
+.nav-item:hover {
+  background-color: #1b263b;
+  cursor: pointer;
 }
 
 .nav-link {
@@ -54,11 +56,11 @@
 }
 
 .fa-primary {
-  color: #7effee;
+  color: #778da9;
 }
 
 .fa-secondary {
-  color: #3c90d4;
+  color: #415a77;
 }
 
 .fa-primary,
@@ -99,6 +101,7 @@
     bottom: 0;
     width: 100vw;
     height: 5rem;
+    border-top: 5px groove;
   }
 
   .logo {
@@ -123,6 +126,7 @@
     top: 0;
     width: 5rem;
     height: 100vh;
+    border-right: 5px groove;
   }
 
   .navbar:hover {
@@ -141,40 +145,3 @@
     left: 0px;
   }
 }
-
-.dark {
-  --text-primary: #b6b6b6;
-  --text-secondary: #ececec;
-  --bg-primary: #23232e;
-  --bg-secondary: #141418;
-}
-
-.light {
-  --text-primary: #1f1f1f;
-  --text-secondary: #000000;
-  --bg-primary: #ffffff;
-  --bg-secondary: #e4e4e4;
-}
-
-.solar {
-  --text-primary: #576e75;
-  --text-secondary: #35535c;
-  --bg-primary: #fdf6e3;
-  --bg-secondary: #f5e5b8;
-}
-
-.theme-icon {
-  display: none;
-}
-
-/* .dark #darkIcon {
-  display: block;
-}
-
-.light #lightIcon {
-  display: block;
-}
-
-.solar #solarIcon {
-  display: block;
-} */

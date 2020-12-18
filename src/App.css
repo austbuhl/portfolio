@@ -1,6 +1,9 @@
 .App {
+  /* height: 100vh; */
+  /* margin: 0;
+  padding: 0; */
+}
+
+main {
   text-align: center;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
 }

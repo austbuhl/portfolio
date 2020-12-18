@@ -41,7 +41,7 @@ export const NavBar = ({ toggleTheme }) => {
           </a>
         </li>
 
-        <li className='nav-item linkedin'>
+        <li className='nav-item'>
           <a
             href='https://www.linkedin.com/in/austinbuhler/'
             target='_blank'
@@ -87,7 +87,7 @@ export const NavBar = ({ toggleTheme }) => {
             <span className='link-text'>Resume</span>
           </a>
         </li>
-
+        {/* 
         <li className='nav-item' id='themeButton' onClick={toggleTheme}>
           <a href='#' className='nav-link'>
             <svg
@@ -167,7 +167,7 @@ export const NavBar = ({ toggleTheme }) => {
             </svg>
             <span className='link-text'>Toggle Theme</span>
           </a>
-        </li>
+        </li> */}
       </ul>
     </nav>
   )
