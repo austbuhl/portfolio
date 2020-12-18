@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 import './ProjectCard.css'
 
 export const ProjectCard = () => {
@@ -6,9 +7,36 @@ export const ProjectCard = () => {
     <section class='column-center'>
       <div className='card'>
         <h1>ProjectSocial</h1>
-        <button>BackEnd</button>
-        <button>FrontEnd</button>
-        <button>Site</button>
+        <motion.button
+          whileHover={{
+            scale: 1.25,
+            transition: {
+              duration: 0.2
+            }
+          }}
+        >
+          BackEnd
+        </motion.button>
+        <motion.button
+          whileHover={{
+            scale: 1.25,
+            transition: {
+              duration: 0.2
+            }
+          }}
+        >
+          FrontEnd
+        </motion.button>
+        <motion.button
+          whileHover={{
+            scale: 1.25,
+            transition: {
+              duration: 0.2
+            }
+          }}
+        >
+          Site
+        </motion.button>
       </div>
       <div className='card'>Project 2</div>
       <div className='card'>Project 3</div>
