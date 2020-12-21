@@ -1,0 +1,15 @@
+[
+  {
+    "id": 1,
+    "name": "ProjectSocial",
+    "image": " an image",
+    "description": "some description here ....",
+    "backend": "github link to the backend",
+    "frontend": "github to the frontend",
+    "url": "if hosted heres the site url",
+    "stack": "React, Rails, PostgreSQL, Javascript, Semantic UI, Google Maps API, NYC Open Data, JWT, BCrypt, ActionCable, Redis"
+  },
+  {
+    "id": 2
+  }
+]
