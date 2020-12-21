@@ -11,6 +11,8 @@ import {
   SiMaterialUi
 } from 'react-icons/si'
 import './ProjectDetail.css'
+import { motion } from 'framer-motion'
+import { animationThree, transition } from '../animations'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -33,7 +35,14 @@ export const ProjectDetail = ({ project }) => {
       ))
 
   return (
-    <div className='project-detail'>
+    <motion.div
+      initial='out'
+      animate='end'
+      exit='out'
+      variants={animationThree}
+      transition={transition}
+      className='project-detail'
+    >
       <h1>{project.name}</h1>
       <img
         src='/ProjectSocial.png'
@@ -55,6 +64,6 @@ export const ProjectDetail = ({ project }) => {
       <SiPostgresql style={{ height: '1.5em', width: '1.5em' }} />
       <SiRails style={{ height: '1.5em', width: '1.5em' }} />
       <p>SOme more words over here yaayayayayay</p>
-    </div>
+    </motion.div>
   )
 }

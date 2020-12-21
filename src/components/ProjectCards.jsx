@@ -1,10 +1,9 @@
 import React, { useState } from 'react'
-import { motion, AnimateSharedLayout, AnimatePresence } from 'framer-motion'
-import { FaGithub } from 'react-icons/fa'
-import { ProjectDetail } from './ProjectDetail'
+import { motion } from 'framer-motion'
 import './ProjectCards.css'
 import { NavLink } from 'react-router-dom'
 import { makeStyles } from '@material-ui/core/styles'
+import { animationTwo, transition } from '../animations/index'
 import Card from '@material-ui/core/Card'
 import CardHeader from '@material-ui/core/CardHeader'
 import CardMedia from '@material-ui/core/CardMedia'
@@ -45,7 +44,14 @@ export const ProjectCards = ({ projects }) => {
   }
 
   return (
-    <section className='column-center'>
+    <motion.section
+      initial='out'
+      animate='in'
+      exit='out'
+      variants={animationTwo}
+      transition={transition}
+      className='column-center'
+    >
       {renderCards()}
       <NavLink to='/projects/1' style={{ textDecoration: 'none' }}>
         <Card className={classes.root}>
@@ -79,6 +85,6 @@ export const ProjectCards = ({ projects }) => {
           </CardActions>
         </Card>
       </NavLink>
-    </section>
+    </motion.section>
   )
 }
