@@ -1,7 +1,7 @@
 import React from 'react'
-import { Chip, Paper } from '@material-ui/core'
-import { makeStyles } from '@material-ui/core/styles'
 import { FaReact } from 'react-icons/fa'
+import { Carousel } from 'react-responsive-carousel'
+import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import {
   SiPostgresql,
   SiRails,
@@ -14,25 +14,15 @@ import './ProjectDetail.css'
 import { motion } from 'framer-motion'
 import { animationThree, transition } from '../animations'
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    backgroundColor: '#1b263b',
-    color: 'white'
-  }
-}))
-
 export const ProjectDetail = ({ project }) => {
-  const classes = useStyles()
-  const renderTechStack = () =>
-    project.stack
-      .split(',')
-      .map((el) => (
-        <Chip
-          label={el}
-          className={classes.root}
-          icon={<FaReact style={{ color: 'white' }} />}
-        />
-      ))
+  const renderImages = () => {
+    return project.images.map((image) => (
+      <div>
+        <img className='project-image' src={image.url} />
+        <p className='legend'>{image.desc}</p>
+      </div>
+    ))
+  }
 
   return (
     <motion.div
@@ -44,14 +34,12 @@ export const ProjectDetail = ({ project }) => {
       className='project-detail'
     >
       <h1>{project.name}</h1>
-      <img
-        src='/ProjectSocial.png'
-        className='project-image'
-        alt='PS'
-        // style={{ width: 750, height: 500 }}
-      />
+      <Carousel id='image-carousel' dynamicHeight={true} showArrows={true}>
+        {renderImages()}
+      </Carousel>
 
-      <h4>{project.stack}</h4>
+      <h4>Built With</h4>
+      <p>{project.stack}</p>
       <br />
       <h4>FrontEnd</h4>
       <FaReact style={{ height: '1.5em', width: '1.5em' }} />
@@ -59,11 +47,11 @@ export const ProjectDetail = ({ project }) => {
       <SiJavascript style={{ height: '1.5em', width: '1.5em' }} />
       <SiGooglemaps style={{ height: '1.5em', width: '1.5em' }} />
       <SiMaterialUi style={{ height: '1.5em', width: '1.5em' }} />
-      <p>Descripton here ladadadadad</p>
       <h4>BackEnd</h4>
       <SiPostgresql style={{ height: '1.5em', width: '1.5em' }} />
       <SiRails style={{ height: '1.5em', width: '1.5em' }} />
-      <p>SOme more words over here yaayayayayay</p>
+      <h4>Description</h4>
+      <div dangerouslySetInnerHTML={{ __html: project.description }}></div>
     </motion.div>
   )
 }
