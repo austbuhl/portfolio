@@ -127,6 +127,7 @@
     width: 5rem;
     height: 100vh;
     border-right: 5px groove;
+    z-index: 2;
   }
 
   .navbar:hover {

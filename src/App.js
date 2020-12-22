@@ -15,7 +15,7 @@ function App() {
       <Switch>
         <div className='App'>
           <NavBar />
-          <Container>
+          <Container id='main-container'>
             <Route
               exact
               path='/projects/:id'
