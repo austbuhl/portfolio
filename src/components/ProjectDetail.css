@@ -1,13 +1,20 @@
-.project-detail {
-  /* text-align: center; */
-  /* display: flex; */
-}
-
-/* .carousel-root {
-  width: 50vw;
-} */
-
 .project-image {
   width: 75%;
   height: auto;
+}
+
+.project-detail {
+  padding-top: 1.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .project-detail {
+    margin-left: 1rem;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .project-detail {
+    margin-left: 5rem;
+  }
 }

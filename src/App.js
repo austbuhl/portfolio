@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { ProjectCards } from './components/ProjectCards'
 import { ProjectDetail } from './components/ProjectDetail'
 import projects from './projects.json'
-import { Container } from '@material-ui/core'
+import { Grid, Container } from '@material-ui/core'
 import { animationOne, transition } from './animations/index'
 import './App.css'
 
@@ -15,7 +15,7 @@ function App() {
       <Switch>
         <div className='App'>
           <NavBar />
-          <Container id='main-container'>
+          <Container>
             <Route
               exact
               path='/projects/:id'
@@ -36,7 +36,7 @@ function App() {
                 variants={animationOne}
                 transition={transition}
               >
-                <h1>CSS is Cool</h1>
+                <h1>Austin</h1>
                 <p>But is it though?</p>
                 <NavLink to='/projects'>View Projects</NavLink>
               </motion.main>
