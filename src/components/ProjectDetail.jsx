@@ -41,21 +41,27 @@ export const ProjectDetail = ({ project }) => {
           <Carousel id='image-carousel' dynamicHeight={true} showArrows={true}>
             {renderImages()}
           </Carousel>
+          <h4>Built With</h4>
+          <p>{project.stack}</p>
         </Grid>
 
         <Grid item sm={12} md={6}>
-          <h4>Built With</h4>
-          <p>{project.stack}</p>
           <br />
-          <h4>FrontEnd</h4>
-          <FaReact style={{ height: '1.5em', width: '1.5em' }} />
-          <SiRedux style={{ height: '1.5em', width: '1.5em' }} />
-          <SiJavascript style={{ height: '1.5em', width: '1.5em' }} />
-          <SiGooglemaps style={{ height: '1.5em', width: '1.5em' }} />
-          <SiMaterialUi style={{ height: '1.5em', width: '1.5em' }} />
-          <h4>BackEnd</h4>
-          <SiPostgresql style={{ height: '1.5em', width: '1.5em' }} />
-          <SiRails style={{ height: '1.5em', width: '1.5em' }} />
+          <div style={{ display: 'flex', justifyContent: 'space-around' }}>
+            <div>
+              <h4>FrontEnd</h4>
+              <FaReact />
+              <SiRedux />
+              <SiJavascript />
+              <SiGooglemaps />
+              <SiMaterialUi />
+            </div>
+            <div>
+              <h4>BackEnd</h4>
+              <SiPostgresql />
+              <SiRails />
+            </div>
+          </div>
           <h4>Description</h4>
           <div dangerouslySetInnerHTML={{ __html: project.description }}></div>
         </Grid>

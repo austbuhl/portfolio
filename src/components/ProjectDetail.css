@@ -15,6 +15,12 @@
 
 @media only screen and (min-width: 600px) {
   .project-detail {
-    margin-left: 5rem;
+    margin-left: 6rem;
   }
+}
+
+svg {
+  height: 1.5em;
+  width: 1.5em;
+  padding-right: 3px;
 }

@@ -5,29 +5,32 @@ import { NavLink } from 'react-router-dom'
 import { makeStyles } from '@material-ui/core/styles'
 import { animationTwo, transition } from '../animations/index'
 import Card from '@material-ui/core/Card'
-import CardHeader from '@material-ui/core/CardHeader'
+import Divider from '@material-ui/core/Divider'
 import CardMedia from '@material-ui/core/CardMedia'
 import CardContent from '@material-ui/core/CardContent'
 import CardActions from '@material-ui/core/CardActions'
 import IconButton from '@material-ui/core/IconButton'
 import Typography from '@material-ui/core/Typography'
 import GitHubIcon from '@material-ui/icons/GitHub'
-import MoreVertIcon from '@material-ui/icons/MoreVert'
 import WebIcon from '@material-ui/icons/Web'
 
 const useStyles = makeStyles((theme) => ({
-  root: {
-    maxWidth: 345
-  },
   media: {
     height: 0,
     paddingTop: '56.25%' // 16:9
+  },
+  newCard: {
+    boxShadow: '5px 5px 5px #0a131f',
+    border: '0.5px solid #0a131f',
+    borderRadius: 10,
+    maxWidth: 345
+  },
+  title: {
+    fontSize: 25
   }
 }))
 
 export const ProjectCards = ({ projects }) => {
-  const [isOpen, setIsOpen] = useState(false)
-  const toggleOpen = () => setIsOpen(!isOpen)
   const classes = useStyles()
 
   const renderCards = () => {
@@ -54,25 +57,21 @@ export const ProjectCards = ({ projects }) => {
     >
       {renderCards()}
       <NavLink to='/projects/1' style={{ textDecoration: 'none' }}>
-        <Card className={classes.root}>
-          <CardHeader
-            action={
-              <IconButton aria-label='settings'>
-                <MoreVertIcon />
-              </IconButton>
-            }
-            title='ProjectSocial'
-          />
+        <Card className={classes.newCard}>
+          {/* <CardHeader title='ProjectSocial' className={classes.title} /> */}
           <CardMedia
             className={classes.media}
-            image='/ProjectSocial.png'
+            image='/PS/ProjectSocialHome.png'
             title='ProjectSocial'
           />
           <CardContent>
+            <Divider />
+            <Typography variant='h5' component='h2'>
+              ProjectSocial
+            </Typography>
+
             <Typography variant='body2' color='textSecondary' component='p'>
-              This impressive paella is a perfect party dish and a fun meal to
-              cook together with your guests. Add 1 cup of frozen peas along
-              with the mussels, if you like.
+              One sentence description..... or just the tech used?
             </Typography>
           </CardContent>
           <CardActions disableSpacing>
