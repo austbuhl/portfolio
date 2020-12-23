@@ -24,11 +24,11 @@ const useStyles = makeStyles((theme) => ({
     height: 0,
     paddingTop: '56.25%' // 16:9
   },
-  newCard: {
+  card: {
     boxShadow: '5px 5px 5px #0a131f',
     border: '0.5px solid #0a131f',
     borderRadius: 10,
-    maxWidth: 345
+    maxWidth: 550
   },
   title: {
     fontSize: '5rem',
@@ -38,17 +38,51 @@ const useStyles = makeStyles((theme) => ({
 
 export const ProjectCards = ({ projects }) => {
   const classes = useStyles()
-
   const renderCards = () => {
     return projects.map((project) => (
-      <NavLink key={project.id} to={`/projects/${project.id}`}>
-        <div className='card'>
-          <h1>{project.name}</h1>
-          <button>{project.backend}</button>
-          <button>{project.frontend}</button>
-          <button>{project.url}</button>
-        </div>
-      </NavLink>
+      <Card className={classes.card}>
+        <CardMedia
+          className={classes.media}
+          image='/PS/ProjectSocialHome.png'
+          title={project.name}
+        />
+        <CardContent>
+          <Divider />
+          <NavLink to={`/projects/${project.id}`}>
+            <Tooltip title='View Additional Detail' arrow placement='right'>
+              <Typography variant='h5' component='span'>
+                {project.name}
+              </Typography>
+            </Tooltip>
+          </NavLink>
+          <Typography variant='body2' color='textSecondary' component='p'>
+            {project.tech}
+          </Typography>
+        </CardContent>
+        <CardActions
+          disableSpacing
+          style={{ display: 'flex', justifyContent: 'space-between' }}
+        >
+          <Tooltip title='View Source Code' arrow placement='right'>
+            <IconButton
+              aria-label='view source code'
+              target='_blank'
+              href={project.frontend}
+            >
+              <GitHubIcon />
+            </IconButton>
+          </Tooltip>
+          <Tooltip title='View Site' arrow placement='left'>
+            <IconButton
+              aria-label='view site'
+              target='_blank'
+              href={project.url}
+            >
+              <WebIcon />
+            </IconButton>
+          </Tooltip>
+        </CardActions>
+      </Card>
     ))
   }
 
@@ -62,44 +96,6 @@ export const ProjectCards = ({ projects }) => {
       className='column-center'
     >
       {renderCards()}
-
-      <Card className={classes.newCard}>
-        {/* <CardHeader title='ProjectSocial' className={classes.title} /> */}
-
-        <CardMedia
-          className={classes.media}
-          image='/PS/ProjectSocialHome.png'
-          title='ProjectSocial'
-        />
-        <CardContent>
-          <Divider />
-          <NavLink to='/projects/1' style={{ textDecoration: 'none' }}>
-            <Tooltip title='View Additional Detail' arrow placement='right'>
-              <Typography variant='h5' component='span'>
-                ProjectSocial
-              </Typography>
-            </Tooltip>
-          </NavLink>
-          <Typography variant='body2' color='textSecondary' component='p'>
-            One sentence description..... or just the tech used?
-          </Typography>
-        </CardContent>
-        <CardActions
-          disableSpacing
-          style={{ display: 'flex', justifyContent: 'space-between' }}
-        >
-          <Tooltip title='View Source Code' arrow placement='right'>
-            <IconButton aria-label='view source code'>
-              <GitHubIcon />
-            </IconButton>
-          </Tooltip>
-          <Tooltip title='View Site' arrow placement='left'>
-            <IconButton aria-label='view site'>
-              <WebIcon />
-            </IconButton>
-          </Tooltip>
-        </CardActions>
-      </Card>
     </motion.section>
   )
 }

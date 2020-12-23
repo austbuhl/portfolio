@@ -8,13 +8,44 @@
       { "url": "/PS/ProjectSocialEvent.png", "desc": "Event Detail Page" },
       { "url": "/PS/ProjectSocialProfile.png", "desc": "User Profile Page" }
     ],
-    "backend": "github link to the backend",
+    "backend": "https://github.com/austbuhl/project-social-back-end",
     "description": "<p>ProjectSocial is a social app connecting New Yorkers by enabling them to host and attend events at public parks in their local neighborhood. This is a Single-Page Application built with a React/Redux FrontEnd and a Rails/PostgreSQL BackEnd. I pulled park coordinates and their corresponding activities from NYC's Open Data Portal to seed my database.</p> <br /> <p>On the FrontEnd, all park activities and events are being house in my Redux store - which I chose to 'normalize' to ensure a single-source of truth and increase my application's performance. I am using 100% functional components, making use of React Hooks wherever necessary for local state. I integrated the Google Maps API in order to plot all the park markers on the home page. The search feature leverages the Google Places API to feed up suggestions based on your location and parameters. The compass is using the browser's built-in Geolocation API to pan the map over to your neighborhood.</p> <br /> I am utilizing JSON Web Tokens and localStorage alongside BCrypt for user authentication. Once logged in, a user can choose to attend/create events, comment on an event's message board, and view other user's profile pages. User's can choose to add each other as friends to see some additional information about one another. I am using WebSockets via Rails' ActionCable to ensure that the event's comments are served up real-time for seamless user communication and coordination.</p>",
-    "frontend": "github to the frontend",
-    "url": "if hosted heres the site url",
+    "frontend": "https://github.com/austbuhl/project-social-front-end",
+    "url": "https://projectsocial.netlify.app/",
+    "tech": "React - Redux - Ruby on Rails",
     "stack": "React, Redux, Rails, PostgreSQL, Javascript, Semantic UI, Google Maps API, NYC Open Data, JWT, BCrypt, ActionCable, Redis"
   },
   {
-    "id": 2
+    "id": 2,
+    "name": "Candle Crush",
+    "images": [],
+    "backend": "https://github.com/austbuhl/candle-crush-back-end",
+    "description": "",
+    "frontend": "https://github.com/austbuhl/candle-crush-front-end",
+    "url": "",
+    "tech": "React - Ruby on Rails",
+    "stack": "React, Rails, PostgreSQL, Javascript, Material UI, JWT, BCrypt"
+  },
+  {
+    "id": 3,
+    "name": "Stonks.js",
+    "images": [],
+    "backend": "https://github.com/austbuhl/candle-crush-back-end",
+    "description": "",
+    "frontend": "https://github.com/austbuhl/candle-crush-front-end",
+    "url": "",
+    "tech": "Javascript - Ruby on Rails",
+    "stack": "Javascript, Rails, PostgreSQL, Bootstrap, IEX Cloud API, Chart.js"
+  },
+  {
+    "id": 4,
+    "name": "Fantasy Fanatics",
+    "images": [],
+    "backend": "",
+    "description": "",
+    "frontend": "https://github.com/austbuhl/fantasy-fanatics",
+    "url": "",
+    "tech": "Full Stack Ruby on Rails",
+    "stack": "Ruby on Rails, PostgreSQL, Bootstrap, BCrypt"
   }
 ]

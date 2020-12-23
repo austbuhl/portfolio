@@ -8,12 +8,10 @@
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 }
 
-.card {
-  box-shadow: 5px 5px 5px #0a131f;
-  margin-top: 3rem;
-  max-width: 500px;
-  height: 350px;
-  border-radius: 10%;
-  background-color: #e0e1dd;
-  color: #0a131f;
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
 }
