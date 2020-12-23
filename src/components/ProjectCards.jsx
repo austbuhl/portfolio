@@ -2,17 +2,22 @@ import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import './ProjectCards.css'
 import { NavLink } from 'react-router-dom'
-import { makeStyles } from '@material-ui/core/styles'
-import { animationTwo, transition } from '../animations/index'
-import Card from '@material-ui/core/Card'
-import Divider from '@material-ui/core/Divider'
-import CardMedia from '@material-ui/core/CardMedia'
-import CardContent from '@material-ui/core/CardContent'
-import CardActions from '@material-ui/core/CardActions'
-import IconButton from '@material-ui/core/IconButton'
-import Typography from '@material-ui/core/Typography'
+import {
+  makeStyles,
+  Card,
+  Divider,
+  CardMedia,
+  CardHeader,
+  CardContent,
+  CardActions,
+  IconButton,
+  Typography,
+  Tooltip
+} from '@material-ui/core/'
 import GitHubIcon from '@material-ui/icons/GitHub'
 import WebIcon from '@material-ui/icons/Web'
+// import { GitHubIcon, WebIcon } from '@material-ui/icons'
+import { animationTwo, transition } from '../animations/index'
 
 const useStyles = makeStyles((theme) => ({
   media: {
@@ -26,7 +31,8 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: 345
   },
   title: {
-    fontSize: 25
+    fontSize: '5rem',
+    fontWeight: 700
   }
 }))
 
@@ -56,34 +62,44 @@ export const ProjectCards = ({ projects }) => {
       className='column-center'
     >
       {renderCards()}
-      <NavLink to='/projects/1' style={{ textDecoration: 'none' }}>
-        <Card className={classes.newCard}>
-          {/* <CardHeader title='ProjectSocial' className={classes.title} /> */}
-          <CardMedia
-            className={classes.media}
-            image='/PS/ProjectSocialHome.png'
-            title='ProjectSocial'
-          />
-          <CardContent>
-            <Divider />
-            <Typography variant='h5' component='h2'>
-              ProjectSocial
-            </Typography>
 
-            <Typography variant='body2' color='textSecondary' component='p'>
-              One sentence description..... or just the tech used?
-            </Typography>
-          </CardContent>
-          <CardActions disableSpacing>
+      <Card className={classes.newCard}>
+        {/* <CardHeader title='ProjectSocial' className={classes.title} /> */}
+
+        <CardMedia
+          className={classes.media}
+          image='/PS/ProjectSocialHome.png'
+          title='ProjectSocial'
+        />
+        <CardContent>
+          <Divider />
+          <NavLink to='/projects/1' style={{ textDecoration: 'none' }}>
+            <Tooltip title='View Additional Detail' arrow placement='right'>
+              <Typography variant='h5' component='span'>
+                ProjectSocial
+              </Typography>
+            </Tooltip>
+          </NavLink>
+          <Typography variant='body2' color='textSecondary' component='p'>
+            One sentence description..... or just the tech used?
+          </Typography>
+        </CardContent>
+        <CardActions
+          disableSpacing
+          style={{ display: 'flex', justifyContent: 'space-between' }}
+        >
+          <Tooltip title='View Source Code' arrow placement='right'>
             <IconButton aria-label='view source code'>
               <GitHubIcon />
             </IconButton>
+          </Tooltip>
+          <Tooltip title='View Site' arrow placement='left'>
             <IconButton aria-label='view site'>
               <WebIcon />
             </IconButton>
-          </CardActions>
-        </Card>
-      </NavLink>
+          </Tooltip>
+        </CardActions>
+      </Card>
     </motion.section>
   )
 }
