@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { motion } from 'framer-motion'
 import './ProjectCards.css'
 import { NavLink } from 'react-router-dom'
@@ -14,25 +14,65 @@ import {
   Typography,
   Tooltip
 } from '@material-ui/core/'
+import { FaReact } from 'react-icons/fa'
+import {
+  SiPostgresql,
+  SiRails,
+  SiRedux,
+  SiJavascript,
+  SiGooglemaps,
+  SiMaterialUi
+} from 'react-icons/si'
 import GitHubIcon from '@material-ui/icons/GitHub'
 import WebIcon from '@material-ui/icons/Web'
+import SkipPreviousIcon from '@material-ui/icons/SkipPrevious'
+import SkipNextIcon from '@material-ui/icons/SkipNext'
+import PlayArrowIcon from '@material-ui/icons/PlayArrow'
 // import { GitHubIcon, WebIcon } from '@material-ui/icons'
 import { animationTwo, transition } from '../animations/index'
 
+// const useStyles = makeStyles((theme) => ({
+//   media: {
+//     height: 0,
+//     paddingTop: '56.25%' // 16:9
+//   },
+//   card: {
+// boxShadow: '5px 5px 5px #0a131f',
+// border: '0.5px solid #0a131f',
+// borderRadius: 10,
+//     maxWidth: 550
+//   },
+//   title: {
+//     fontSize: '5rem',
+//     fontWeight: 700
+//   }
+// }))
+
 const useStyles = makeStyles((theme) => ({
-  media: {
-    height: 0,
-    paddingTop: '56.25%' // 16:9
+  root: {
+    display: 'flex',
+    height: '35vh',
+    width: 'auto',
+    maxWidth: 750,
+    boxShadow: '2px 2px 2px #0a131f',
+    border: '0.25px solid #0a131f',
+    borderRadius: 10
   },
-  card: {
-    boxShadow: '5px 5px 5px #0a131f',
-    border: '0.5px solid #0a131f',
-    borderRadius: 10,
-    maxWidth: 550
+  details: {
+    display: 'flex',
+    flexDirection: 'column'
   },
-  title: {
-    fontSize: '5rem',
-    fontWeight: 700
+  content: {
+    flex: '1 0 auto'
+  },
+  cover: {
+    flex: '1 0 auto'
+  },
+  controls: {
+    display: 'flex',
+    justifyContent: 'space-between'
+    // paddingLeft: theme.spacing(1),
+    // paddingBottom: theme.spacing(1)
   }
 }))
 
@@ -93,9 +133,106 @@ export const ProjectCards = ({ projects }) => {
       exit='out'
       variants={animationTwo}
       transition={transition}
-      className='column-center'
+      // className='column-center'
     >
-      {renderCards()}
+      {/* {renderCards()} */}
+
+      <Card className={classes.root}>
+        <div className={classes.details}>
+          <CardContent className={classes.content}>
+            <NavLink to='/projects/1'>
+              <Typography component='h5' variant='h5'>
+                ProjectSocial
+              </Typography>
+            </NavLink>
+            <Typography variant='subtitle1' color='textSecondary'>
+              {/* React - Redux - Ruby on Rails */}
+              <h4>FrontEnd</h4>
+              <FaReact />
+              <SiRedux />
+              <SiJavascript />
+              <SiGooglemaps />
+              <SiMaterialUi />
+              <h4>Backend</h4>
+              <SiPostgresql />
+              <SiRails />
+            </Typography>
+          </CardContent>
+          <div className={classes.controls}>
+            <Tooltip title='View Source Code' arrow placement='right'>
+              <IconButton
+                aria-label='view source code'
+                target='_blank'
+                href='https://github.com/austbuhl/project-social-front-end'
+              >
+                <GitHubIcon />
+              </IconButton>
+            </Tooltip>
+
+            <Tooltip title='View Site' arrow placement='left'>
+              <IconButton
+                aria-label='view site'
+                target='_blank'
+                href='https://github.com/austbuhl/project-social-front-end'
+              >
+                <WebIcon />
+              </IconButton>
+            </Tooltip>
+          </div>
+        </div>
+        <CardMedia
+          className={classes.cover}
+          image='/PS/ProjectSocialHome.png'
+          title='Live from space album cover'
+        />
+      </Card>
+      <br />
+      <Card className={classes.root}>
+        <div className={classes.details}>
+          <CardContent className={classes.content}>
+            <Typography component='h5' variant='h5'>
+              ProjectSocial
+            </Typography>
+            <Typography variant='subtitle1' color='textSecondary'>
+              <h4>FrontEnd</h4>
+              <FaReact />
+              <SiRedux />
+              <SiJavascript />
+              <SiGooglemaps />
+              <SiMaterialUi />
+              <h4>Backend</h4>
+              <SiPostgresql />
+              <SiRails />
+            </Typography>
+          </CardContent>
+          <div className={classes.controls}>
+            <Tooltip title='View Source Code' arrow placement='right'>
+              <IconButton
+                aria-label='view source code'
+                target='_blank'
+                href='https://github.com/austbuhl/project-social-front-end'
+              >
+                <GitHubIcon />
+              </IconButton>
+            </Tooltip>
+
+            <Tooltip title='View Site' arrow placement='left'>
+              <IconButton
+                aria-label='view site'
+                target='_blank'
+                href='https://github.com/austbuhl/project-social-front-end'
+              >
+                <WebIcon />
+              </IconButton>
+            </Tooltip>
+          </div>
+        </div>
+        <CardMedia
+          className={classes.cover}
+          image='/PS/ProjectSocialProfile.png'
+          title='Live from space album cover'
+        />
+      </Card>
     </motion.section>
   )
 }
