@@ -123,17 +123,18 @@ export const ProjectCards = ({ projects }) => {
   }
 
   return (
-    <motion.section
+    <motion.div
       initial='out'
       animate='in'
       exit='out'
       variants={animationTwo}
       transition={transition}
+      style={{ width: '100%' }}
       className='cards-container'
     >
-      <h1>Projects</h1>
+      <Typography variant='h3'>Projects</Typography>
       {renderCards()}
-    </motion.section>
+    </motion.div>
   )
 }
 
