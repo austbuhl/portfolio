@@ -8,6 +8,18 @@
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 }
 
+@media only screen and (max-width: 600px) {
+  .cards-container {
+    margin-left: none;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .cards-container {
+    margin-left: 20%;
+  }
+}
+
 a {
   text-decoration: none;
 }

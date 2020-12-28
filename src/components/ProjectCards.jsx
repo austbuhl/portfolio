@@ -38,7 +38,8 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: 750,
     boxShadow: '2px 2px 2px #0a131f',
     border: '0.25px solid #0a131f',
-    borderRadius: 10
+    borderRadius: 10,
+    margin: '2em'
   },
   details: {
     display: 'flex',
@@ -131,8 +132,9 @@ export const ProjectCards = ({ projects }) => {
       exit='out'
       variants={animationTwo}
       transition={transition}
-      // className='column-center'
+      className='cards-container'
     >
+      <h1>Projects</h1>
       {renderCards()}
     </motion.section>
   )
