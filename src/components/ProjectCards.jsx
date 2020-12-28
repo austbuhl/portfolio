@@ -5,11 +5,8 @@ import { NavLink } from 'react-router-dom'
 import {
   makeStyles,
   Card,
-  Divider,
   CardMedia,
-  CardHeader,
   CardContent,
-  CardActions,
   IconButton,
   Typography,
   Tooltip

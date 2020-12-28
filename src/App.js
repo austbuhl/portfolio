@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { ProjectCards } from './components/ProjectCards'
 import { ProjectDetail } from './components/ProjectDetail'
 import projects from './projects.json'
-import { Grid, Container } from '@material-ui/core'
+import { Paper, Container, Button } from '@material-ui/core'
 import { animationOne, transition } from './animations/index'
 import './App.css'
 
@@ -36,9 +36,17 @@ function App() {
                 variants={animationOne}
                 transition={transition}
               >
-                <h1>Austin</h1>
-                <p>But is it though?</p>
-                <NavLink to='/projects'>View Projects</NavLink>
+                <Paper style={{ width: '50vw' }}>
+                  <h1>Austin Buhler</h1>
+                  <p>
+                    A full stack developer with experience in React, JS & Ruby
+                    on Rails
+                  </p>
+
+                  <NavLink to='/projects'>
+                    <Button color='primary'>View Projects</Button>
+                  </NavLink>
+                </Paper>
               </motion.main>
             </Route>
           </Container>
