@@ -9,7 +9,7 @@
       { "url": "/PS/ProjectSocialProfile.png", "desc": "User Profile Page" }
     ],
     "backend": "https://github.com/austbuhl/project-social-back-end",
-    "description": "<p>ProjectSocial is a social app connecting New Yorkers by enabling them to host and attend events at public parks in their local neighborhood. This is a Single-Page Application built with a React/Redux FrontEnd and a Rails/PostgreSQL BackEnd. I pulled park coordinates and their corresponding activities from NYC's Open Data Portal to seed my database.</p> <br /> <p>On the FrontEnd, all park activities and events are being house in my Redux store - which I chose to 'normalize' to ensure a single-source of truth and increase my application's performance. I am using 100% functional components, making use of React Hooks wherever necessary for local state. I integrated the Google Maps API in order to plot all the park markers on the home page. The search feature leverages the Google Places API to feed up suggestions based on your location and parameters. The compass is using the browser's built-in Geolocation API to pan the map over to your neighborhood.</p> <br /> I am utilizing JSON Web Tokens and localStorage alongside BCrypt for user authentication. Once logged in, a user can choose to attend/create events, comment on an event's message board, and view other user's profile pages. User's can choose to add each other as friends to see some additional information about one another. I am using WebSockets via Rails' ActionCable to ensure that the event's comments are served up real-time for seamless user communication and coordination.</p>",
+    "description": "<p>ProjectSocial is a social app connecting New Yorkers by enabling them to host and attend events at public parks in their local neighborhood. This is a Single-Page Application built with a React/Redux FrontEnd with Semantic UI for Styling and a Rails/PostgreSQL BackEnd. I pulled park coordinates and their corresponding activities from NYC's Open Data Portal to seed my database.</p> <br /> <p>On the FrontEnd, all park activities and events are being housed in my Redux store - which I chose to 'normalize' to ensure a single-source of truth and increase my application's performance. I am using 100% functional components, making use of React Hooks wherever necessary for local state. I integrated the Google Maps API in order to plot all the park markers on the home page. The search feature leverages the Google Places API to feed up suggestions based on your location and parameters. The compass is using the browser's built-in Geolocation API to pan the map over to your neighborhood.</p> <br /> I am utilizing JSON Web Tokens and localStorage alongside BCrypt for user authentication. Once logged in, a user can choose to attend/create events, comment on an event's message board, and view other user's profile pages. User's can choose to add each other as friends to see some additional information about one another. I am using WebSockets via Rails' ActionCable to ensure that the event's comments are served up real-time for seamless user communication and coordination.</p>",
     "frontend": "https://github.com/austbuhl/project-social-front-end",
     "url": "https://projectsocial.netlify.app/",
     "tech": "React - Redux - Ruby on Rails",
@@ -19,6 +19,7 @@
         "Redux",
         "Javascript",
         "Semantic UI",
+        "React Router",
         "Google Maps API",
         "JWT"
       ],
@@ -36,18 +37,18 @@
     "id": 2,
     "name": "Candle Crush",
     "images": [
-      { "url": "/PS/ProjectSocialHome.png", "desc": "Homepage" },
-      { "url": "/PS/ProjectSocialPark.png", "desc": "Park Detail Page" },
-      { "url": "/PS/ProjectSocialEvent.png", "desc": "Event Detail Page" },
-      { "url": "/PS/ProjectSocialProfile.png", "desc": "User Profile Page" }
+      { "url": "/CC/CandleCrushHome.png", "desc": "Homepage" },
+      { "url": "/CC/CandleCrushCatalog.png", "desc": "Product Catalog" },
+      { "url": "/CC/CandleCrushDetail.png", "desc": "Product Detail Page" },
+      { "url": "/CC/CandleCrushCart.png", "desc": "Your Cart" }
     ],
     "backend": "https://github.com/austbuhl/candle-crush-back-end",
-    "description": "<p>Candle Crush is an E-Commerce app for high-end candles. </p>",
+    "description": "<p>Candle Crush is an e-commerce app for high-end candles. This is a Single-Page Application built with a React FrontEnd with Material UI Styling, a Rails/PostgreSQL BackEnd and React Router for Client-Side Routing. User auth is done with JSON Web Tokens and localStorage on the client-side alongside BCrypt on the server-side.</p> <br /> <p>When creating an account, user's can choose to create a vendor account or just a basic consumer. Vendors have access to create and sell their own items on the site.  All users can search through the product catalog or filter by scent/price. Each candle has a show page where user's can get some additional information about the product and also leave/read other's ratings and reviews.</p> <br /> <p>The cart features a fully responsive interface enabling user's to add or remove items all the way up until checkout. User's are also able to return products at any time from their profile page.</p>",
     "frontend": "https://github.com/austbuhl/candle-crush-front-end",
     "url": "",
     "tech": "React - Ruby on Rails",
     "stack": {
-      "frontend": ["React", "Javascript", "Material UI", "JWT"],
+      "frontend": ["React", "Javascript", "Material UI", "React Router", "JWT"],
       "backend": ["Rails", "PostgreSQL", "BCrypt"]
     }
   },
@@ -61,7 +62,7 @@
       { "url": "/PS/ProjectSocialProfile.png", "desc": "User Profile Page" }
     ],
     "backend": "https://github.com/austbuhl/candle-crush-back-end",
-    "description": "",
+    "description": "<p>Stonks.js is a financial markets tracking application, built with a Vanilla Javascript FrontEnd with Bootstrap Styling and a Rails API. This project was completed in a four-day sprint by a partner and I. We utilized IEX Cloud's API to serve up real-time stock quotes and news.</p> <br /> <p>User's can follow their favorite companies to have news articles and quote tailored to their specific interests. We integrated the trailing 3-month closing prices with Chart.js to enable a clean and simple interface for trend analysis. User's are able to search for any publicly traded company by name or by ticker symbol via the dynamic search bar which will make auto-complete suggestions as you type.</p>",
     "frontend": "https://github.com/austbuhl/candle-crush-front-end",
     "url": "",
     "tech": "Javascript - Ruby on Rails",
@@ -80,7 +81,7 @@
       { "url": "/PS/ProjectSocialProfile.png", "desc": "User Profile Page" }
     ],
     "backend": "",
-    "description": "",
+    "description": "<p>Fantasy Fanatics is a Ruby on Rails application that optimizes your fantasy football lineup on a weekly basis. User's can draft and build a team of their favorite players and join a league. Once their team is drafted they can tinker with their lineup manually or have their lineup automatically set based on the consensus analyst rankings for that particular week.</p> <br /> <p>When signing up users have the option to join as a team owner or as an analyst. Analysts are able to login weekly to post their rankings that all other users can see. The multiple user roles were built with a self-referential user model and leverage BCrypt for password protection.</p>",
     "frontend": "https://github.com/austbuhl/fantasy-fanatics",
     "url": "",
     "tech": "Full Stack Ruby on Rails",

@@ -39,7 +39,11 @@ export const ProjectDetail = ({ project }) => {
         <Grid item sm={12} md={6}>
           <br />
           <h4>Built With</h4>
-          <p>{project.tech}</p>
+          <p>
+            {`${project.stack.frontend.join(
+              ', '
+            )}, ${project.stack.backend.join(', ')}`}
+          </p>
           <br />
           <h4>Description</h4>
           <div dangerouslySetInnerHTML={{ __html: project.description }}></div>
