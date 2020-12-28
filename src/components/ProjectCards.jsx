@@ -21,7 +21,10 @@ import {
   SiRedux,
   SiJavascript,
   SiGooglemaps,
-  SiMaterialUi
+  SiMaterialUi,
+  SiBootstrap,
+  SiRuby,
+  SiReactrouter
 } from 'react-icons/si'
 import GitHubIcon from '@material-ui/icons/GitHub'
 import WebIcon from '@material-ui/icons/Web'
@@ -39,7 +42,10 @@ const useStyles = makeStyles((theme) => ({
   },
   details: {
     display: 'flex',
-    flexDirection: 'column'
+    flexDirection: 'column',
+    width: '40%',
+    // width: 300,
+    marginRight: '1em'
   },
   content: {
     flex: '1 0 auto'
@@ -62,7 +68,10 @@ const icons = {
   Rails: <SiRails />,
   PostgreSQL: <SiPostgresql />,
   'Google Maps API': <SiGooglemaps />,
-  'Material UI': <SiMaterialUi />
+  'Material UI': <SiMaterialUi />,
+  Bootstrap: <SiBootstrap />,
+  'Ruby on Rails': <SiRuby />,
+  'React Router': <SiReactrouter />
 }
 
 export const ProjectCards = ({ projects }) => {

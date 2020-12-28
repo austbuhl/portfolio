@@ -56,10 +56,11 @@
     "id": 3,
     "name": "Stonks.js",
     "images": [
-      { "url": "/PS/ProjectSocialHome.png", "desc": "Homepage" },
-      { "url": "/PS/ProjectSocialPark.png", "desc": "Park Detail Page" },
-      { "url": "/PS/ProjectSocialEvent.png", "desc": "Event Detail Page" },
-      { "url": "/PS/ProjectSocialProfile.png", "desc": "User Profile Page" }
+      { "url": "/Stonks/StonksHome.png", "desc": "Homepage" },
+      {
+        "url": "/Stonks/StonksChart.png",
+        "desc": "Trailing 6-Month Closing Price Chart"
+      }
     ],
     "backend": "https://github.com/austbuhl/candle-crush-back-end",
     "description": "<p>Stonks.js is a financial markets tracking application, built with a Vanilla Javascript FrontEnd with Bootstrap Styling and a Rails API. This project was completed in a four-day sprint by a partner and I. We utilized IEX Cloud's API to serve up real-time stock quotes and news.</p> <br /> <p>User's can follow their favorite companies to have news articles and quote tailored to their specific interests. We integrated the trailing 3-month closing prices with Chart.js to enable a clean and simple interface for trend analysis. User's are able to search for any publicly traded company by name or by ticker symbol via the dynamic search bar which will make auto-complete suggestions as you type.</p>",
@@ -75,10 +76,10 @@
     "id": 4,
     "name": "Fantasy Fanatics",
     "images": [
-      { "url": "/PS/ProjectSocialHome.png", "desc": "Homepage" },
-      { "url": "/PS/ProjectSocialPark.png", "desc": "Park Detail Page" },
-      { "url": "/PS/ProjectSocialEvent.png", "desc": "Event Detail Page" },
-      { "url": "/PS/ProjectSocialProfile.png", "desc": "User Profile Page" }
+      { "url": "/Fantasy/FantasyHome.png", "desc": "Homepage" },
+      { "url": "/Fantasy/FantasyTeam.png", "desc": "Team Page" },
+      { "url": "/Fantasy/FantasyPlayers.png", "desc": "Players List Page" },
+      { "url": "/Fantasy/FantasyRankings.png", "desc": "Rankings List Page" }
     ],
     "backend": "",
     "description": "<p>Fantasy Fanatics is a Ruby on Rails application that optimizes your fantasy football lineup on a weekly basis. User's can draft and build a team of their favorite players and join a league. Once their team is drafted they can tinker with their lineup manually or have their lineup automatically set based on the consensus analyst rankings for that particular week.</p> <br /> <p>When signing up users have the option to join as a team owner or as an analyst. Analysts are able to login weekly to post their rankings that all other users can see. The multiple user roles were built with a self-referential user model and leverage BCrypt for password protection.</p>",
