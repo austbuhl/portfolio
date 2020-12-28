@@ -13,39 +13,80 @@
     "frontend": "https://github.com/austbuhl/project-social-front-end",
     "url": "https://projectsocial.netlify.app/",
     "tech": "React - Redux - Ruby on Rails",
-    "stack": "React, Redux, Rails, PostgreSQL, Javascript, Semantic UI, Google Maps API, NYC Open Data, JWT, BCrypt, ActionCable, Redis"
+    "stack": {
+      "frontend": [
+        "React",
+        "Redux",
+        "Javascript",
+        "Semantic UI",
+        "Google Maps API",
+        "JWT"
+      ],
+      "backend": [
+        "Rails",
+        "PostgreSQL",
+        "NYC Open Data",
+        "BCrypt",
+        "ActionCable",
+        "Redis"
+      ]
+    }
   },
   {
     "id": 2,
     "name": "Candle Crush",
-    "images": [],
+    "images": [
+      { "url": "/PS/ProjectSocialHome.png", "desc": "Homepage" },
+      { "url": "/PS/ProjectSocialPark.png", "desc": "Park Detail Page" },
+      { "url": "/PS/ProjectSocialEvent.png", "desc": "Event Detail Page" },
+      { "url": "/PS/ProjectSocialProfile.png", "desc": "User Profile Page" }
+    ],
     "backend": "https://github.com/austbuhl/candle-crush-back-end",
-    "description": "",
+    "description": "<p>Candle Crush is an E-Commerce app for high-end candles. </p>",
     "frontend": "https://github.com/austbuhl/candle-crush-front-end",
     "url": "",
     "tech": "React - Ruby on Rails",
-    "stack": "React, Rails, PostgreSQL, Javascript, Material UI, JWT, BCrypt"
+    "stack": {
+      "frontend": ["React", "Javascript", "Material UI", "JWT"],
+      "backend": ["Rails", "PostgreSQL", "BCrypt"]
+    }
   },
   {
     "id": 3,
     "name": "Stonks.js",
-    "images": [],
+    "images": [
+      { "url": "/PS/ProjectSocialHome.png", "desc": "Homepage" },
+      { "url": "/PS/ProjectSocialPark.png", "desc": "Park Detail Page" },
+      { "url": "/PS/ProjectSocialEvent.png", "desc": "Event Detail Page" },
+      { "url": "/PS/ProjectSocialProfile.png", "desc": "User Profile Page" }
+    ],
     "backend": "https://github.com/austbuhl/candle-crush-back-end",
     "description": "",
     "frontend": "https://github.com/austbuhl/candle-crush-front-end",
     "url": "",
     "tech": "Javascript - Ruby on Rails",
-    "stack": "Javascript, Rails, PostgreSQL, Bootstrap, IEX Cloud API, Chart.js"
+    "stack": {
+      "frontend": ["Javascript", "Bootstrap", "IEX Cloud API", "Chart.js"],
+      "backend": ["Rails", "PostgreSQL"]
+    }
   },
   {
     "id": 4,
     "name": "Fantasy Fanatics",
-    "images": [],
+    "images": [
+      { "url": "/PS/ProjectSocialHome.png", "desc": "Homepage" },
+      { "url": "/PS/ProjectSocialPark.png", "desc": "Park Detail Page" },
+      { "url": "/PS/ProjectSocialEvent.png", "desc": "Event Detail Page" },
+      { "url": "/PS/ProjectSocialProfile.png", "desc": "User Profile Page" }
+    ],
     "backend": "",
     "description": "",
     "frontend": "https://github.com/austbuhl/fantasy-fanatics",
     "url": "",
     "tech": "Full Stack Ruby on Rails",
-    "stack": "Ruby on Rails, PostgreSQL, Bootstrap, BCrypt"
+    "stack": {
+      "frontend": ["Ruby on Rails", "Bootstrap"],
+      "backend": ["Rails", "PostgreSQL", "BCrypt"]
+    }
   }
 ]

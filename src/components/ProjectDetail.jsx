@@ -1,21 +1,14 @@
 import React from 'react'
-import { FaReact } from 'react-icons/fa'
 import { Carousel } from 'react-responsive-carousel'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
-import {
-  SiPostgresql,
-  SiRails,
-  SiRedux,
-  SiJavascript,
-  SiGooglemaps,
-  SiMaterialUi
-} from 'react-icons/si'
 import './ProjectDetail.css'
 import { motion } from 'framer-motion'
 import { Grid } from '@material-ui/core'
 import { animationThree, transition } from '../animations'
 
 export const ProjectDetail = ({ project }) => {
+  console.log(project)
+
   const renderImages = () => {
     return project.images.map((image) => (
       <div>
@@ -46,7 +39,7 @@ export const ProjectDetail = ({ project }) => {
         <Grid item sm={12} md={6}>
           <br />
           <h4>Built With</h4>
-          <p>{project.stack}</p>
+          <p>{project.tech}</p>
           <br />
           <h4>Description</h4>
           <div dangerouslySetInnerHTML={{ __html: project.description }}></div>
