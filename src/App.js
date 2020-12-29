@@ -5,34 +5,11 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { ProjectCards } from './components/ProjectCards'
 import { ProjectDetail } from './components/ProjectDetail'
 import projects from './projects.json'
-import {
-  makeStyles,
-  Paper,
-  Container,
-  Grid,
-  Avatar,
-  Button,
-  Typography
-} from '@material-ui/core'
+import { Container, Button, Typography } from '@material-ui/core'
 import { animationOne, transition } from './animations/index'
 import './App.css'
 
-const useStyles = makeStyles((theme) => ({
-  card: {
-    width: '55vw',
-    marginTop: '5rem',
-    boxShadow: '10px 10px 10px #0a131f',
-    border: '1.25px solid #0a131f',
-    padding: '1rem'
-  },
-  image: {
-    width: theme.spacing(25),
-    height: theme.spacing(25)
-  }
-}))
-
 function App() {
-  const classes = useStyles()
   return (
     <AnimatePresence exitBeforeEnter>
       <Switch>
@@ -75,7 +52,11 @@ function App() {
                   <a href='mailto:austinbuhler@gmail.com'>
                     <span>austinbuhler@gmail.com</span>
                   </a>
-                  <a href='https://github.com/austbuhl' target='_blank'>
+                  <a
+                    href='https://github.com/austbuhl'
+                    target='_blank'
+                    rel='noreferrer'
+                  >
                     <span> | @austbuhl</span>
                   </a>
                   <br />
