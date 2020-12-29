@@ -19,10 +19,10 @@ import './App.css'
 
 const useStyles = makeStyles((theme) => ({
   card: {
-    width: '65vw',
-    marginTop: '3rem',
-    boxShadow: '2px 2px 2px #0a131f',
-    border: '0.25px solid #0a131f',
+    width: '55vw',
+    marginTop: '5rem',
+    boxShadow: '10px 10px 10px #0a131f',
+    border: '1.25px solid #0a131f',
     padding: '1rem'
   },
   image: {
@@ -74,6 +74,17 @@ function App() {
                     <a href='https://github.com/austbuhl' target='_blank'>
                       <span> | @austbuhl</span>
                     </a>
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Pariatur illo eligendi, provident officiis ipsa tenetur
+                      accusamus possimus facilis itaque ab nostrum debitis
+                      quidem hic qui enim molestiae laudantium consequuntur
+                      quod? Lorem ipsum dolor sit amet consectetur adipisicing
+                      elit. Doloremque, animi obcaecati recusandae fuga debitis
+                      esse consectetur blanditiis! Incidunt quas corporis quia
+                      nostrum iusto. Quam dolorum, aut ratione molestias vitae
+                      veniam!
+                    </p>
                   </div>
                   <NavLink to='/projects'>
                     <Button

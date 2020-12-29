@@ -82,7 +82,7 @@ export const NavBar = ({ toggleTheme }) => {
         </li>
 
         <li className='nav-item'>
-          <a href='#' className='nav-link'>
+          <a href='/Austin Buhler - Resume.pdf' className='nav-link'>
             <FaUserAlt />
             <span className='link-text'>Resume</span>
           </a>

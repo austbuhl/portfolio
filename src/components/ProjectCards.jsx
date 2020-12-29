@@ -33,8 +33,8 @@ const useStyles = makeStyles((theme) => ({
     height: '35vh',
     width: 'auto',
     maxWidth: 750,
-    boxShadow: '2px 2px 2px #0a131f',
-    border: '0.25px solid #0a131f',
+    boxShadow: '10px 10px 10px #0a131f',
+    border: '1.25px solid #0a131f',
     borderRadius: 10,
     margin: '2em'
   },
