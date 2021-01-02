@@ -132,7 +132,9 @@ export const ProjectCards = ({ projects }) => {
       style={{ width: '100%' }}
       className='cards-container'
     >
-      <Typography variant='h3'>Projects</Typography>
+      <Typography variant='h3' component='h3' style={{ marginTop: '.5em' }}>
+        <strong>Projects</strong>
+      </Typography>
       {renderCards()}
     </motion.div>
   )
