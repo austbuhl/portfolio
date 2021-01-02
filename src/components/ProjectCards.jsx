@@ -80,7 +80,7 @@ export const ProjectCards = ({ projects }) => {
       <Card key={project.id} className={classes.root}>
         <div className={classes.details}>
           <CardContent className={classes.content}>
-            <NavLink to={`/projects/${project.id}`}>
+            <NavLink to={`/portfolio/projects/${project.id}`}>
               <Typography component='h3' variant='h4'>
                 {project.name}
               </Typography>
