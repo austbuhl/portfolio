@@ -13,7 +13,7 @@ export const NavBar = ({ toggleTheme }) => {
     <nav className='navbar'>
       <ul className='navbar-nav'>
         <li className='logo'>
-          <a href='/' className='nav-link'>
+          <a href='/portfolio' className='nav-link'>
             <span className='link-text logo-text'>Austin</span>
             <svg
               aria-hidden='true'

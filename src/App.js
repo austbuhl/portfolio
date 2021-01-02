@@ -18,17 +18,17 @@ function App() {
           <Container id='main-container'>
             <Route
               exact
-              path='/projects/:id'
+              path='/portfolio/projects/:id'
               render={({ match }) => {
                 const projectId = parseInt(match.params.id)
                 const project = projects.find((proj) => proj.id === projectId)
                 return <ProjectDetail project={project} />
               }}
             />
-            <Route exact path='/projects'>
+            <Route exact path='/portfolio/projects'>
               <ProjectCards projects={projects} />
             </Route>
-            <Route exact path='/'>
+            <Route exact path='/portfolio'>
               <motion.main
                 initial='out'
                 animate='end'
@@ -68,7 +68,7 @@ function App() {
                     breakfast burritos.
                   </p>
                 </div>
-                <NavLink to='/projects'>
+                <NavLink to='/portfolio/projects'>
                   <Button
                     color='primary'
                     style={{ marginTop: '1rem', fontSize: '1.5rem' }}
