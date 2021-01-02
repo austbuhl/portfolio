@@ -37,14 +37,8 @@
     "id": 2,
     "name": "Candle Crush",
     "images": [
-      {
-        "url": "./CC/CandleCrushHome.png",
-        "desc": "Homepage"
-      },
-      {
-        "url": "./CC/CandleCrushCatalog.png",
-        "desc": "Product Catalog"
-      },
+      { "url": "./CC/CandleCrushHome.png", "desc": "Homepage" },
+      { "url": "./CC/CandleCrushCatalog.png", "desc": "Product Catalog" },
       {
         "url": "./CC/CandleCrushDetail.png",
         "desc": "Product Detail Page"
