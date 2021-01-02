@@ -61,10 +61,11 @@ function App() {
                   </a>
                   <br />
                   <br />
-                  <p>
+                  <p style={{ maxWidth: '35rem', fontSize: '1.5rem' }}>
                     Full stack software developer specializing in React,
-                    Javascript and Ruby on Rails. Enjoys long walks on the
-                    beach, making banana bread and the hoppiest of beers.
+                    Javascript and Ruby on Rails. Passionate about technology,
+                    solving problems, clean data, all things sports and
+                    breakfast burritos.
                   </p>
                 </div>
                 <NavLink to='/projects'>
