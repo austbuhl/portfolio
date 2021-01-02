@@ -46,6 +46,8 @@
 .link-text {
   display: none;
   margin-left: 1rem;
+  font-size: 1.5rem;
+  font-weight: 550;
 }
 
 .nav-link svg {
@@ -71,7 +73,7 @@
 .logo {
   font-weight: bold;
   text-transform: uppercase;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   text-align: center;
   color: var(--text-secondary);
   background: var(--bg-secondary);
@@ -132,7 +134,7 @@
   }
 
   .navbar:hover {
-    width: 16rem;
+    width: 20rem;
   }
 
   .navbar:hover .link-text {
