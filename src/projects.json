@@ -3,10 +3,10 @@
     "id": 1,
     "name": "ProjectSocial",
     "images": [
-      { "url": "./PS/ProjectSocialHome.png", "desc": "Homepage" },
-      { "url": "./PS/ProjectSocialPark.png", "desc": "Park Detail Page" },
-      { "url": "./PS/ProjectSocialEvent.png", "desc": "Event Detail Page" },
-      { "url": "./PS/ProjectSocialProfile.png", "desc": "User Profile Page" }
+      { "url": "../PS/ProjectSocialHome.png", "desc": "Homepage" },
+      { "url": "../PS/ProjectSocialPark.png", "desc": "Park Detail Page" },
+      { "url": "../PS/ProjectSocialEvent.png", "desc": "Event Detail Page" },
+      { "url": "../PS/ProjectSocialProfile.png", "desc": "User Profile Page" }
     ],
     "backend": "https://github.com/austbuhl/project-social-back-end",
     "description": "<p>ProjectSocial is a social app connecting New Yorkers by enabling them to host and attend events at public parks in their local neighborhood. This is a Single-Page Application built with a React/Redux FrontEnd with Semantic UI for Styling and a Rails/PostgreSQL BackEnd. I pulled park coordinates and their corresponding activities from NYC's Open Data Portal to seed my database.</p> <br /> <p>On the FrontEnd, all park activities and events are being housed in my Redux store - which I chose to 'normalize' to ensure a single-source of truth and increase my application's performance. I am using 100% functional components, making use of React Hooks wherever necessary for local state. I integrated the Google Maps API in order to plot all the park markers on the home page. The search feature leverages the Google Places API to feed up suggestions based on your location and parameters. The compass is using the browser's built-in Geolocation API to pan the map over to your neighborhood.</p> <br /> I am utilizing JSON Web Tokens and localStorage alongside BCrypt for user authentication. Once logged in, a user can choose to attend/create events, comment on an event's message board, and view other user's profile pages. User's can choose to add each other as friends to see some additional information about one another. I am using WebSockets via Rails' ActionCable to ensure that the event's comments are served up real-time for seamless user communication and coordination.</p>",
