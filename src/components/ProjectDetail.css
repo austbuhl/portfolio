@@ -24,3 +24,8 @@ svg {
   width: 1.5em;
   padding-right: 3px;
 }
+
+.project-links {
+  font-size: 1.25rem;
+  text-align: center;
+}

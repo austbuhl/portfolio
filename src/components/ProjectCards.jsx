@@ -88,7 +88,7 @@ export const ProjectCards = ({ projects }) => {
             <div>
               <h4>FrontEnd</h4>
               {project.stack.frontend.map((tech) => icons[tech])}
-              <h4>Backend</h4>
+              <h4>BackEnd</h4>
               {project.stack.backend.map((tech) => icons[tech])}
             </div>
           </CardContent>

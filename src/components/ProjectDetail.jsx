@@ -32,10 +32,26 @@ export const ProjectDetail = ({ project }) => {
           <Typography component='h3' variant='h4'>
             <strong>{project.name}</strong>
           </Typography>
-
           <Carousel id='image-carousel' dynamicHeight={true} showArrows={true}>
             {renderImages()}
           </Carousel>
+          <div className='project-links'>
+            <a href={project.frontend} target='_blank'>
+              FrontEnd
+            </a>
+            {' | '}
+            {project.backend !== '' && (
+              <a href={project.backend} target='_blank'>
+                BackEnd
+              </a>
+            )}
+            {' | '}
+            {project.url !== '' && (
+              <a href={project.url} target='_blank'>
+                Site
+              </a>
+            )}
+          </div>
         </Grid>
 
         <Grid item sm={12} md={6}>
