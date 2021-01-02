@@ -35,7 +35,6 @@ function App() {
                 exit='out'
                 variants={animationOne}
                 transition={transition}
-                style={{ marginTop: '3.5em' }}
               >
                 <Typography variant='h2' component='h2'>
                   <strong>Austin Buhler</strong>
@@ -43,7 +42,6 @@ function App() {
                 <img
                   src='https://avatars2.githubusercontent.com/u/44592690?s=460&u=e3953edcf5c5ace3e45c7565c52e9031f9177cf4&v=4'
                   alt='Austin'
-                  style={{ borderRadius: '50%', height: '20vh' }}
                 />
                 <Typography variant='h4' style={{ marginTop: '1rem' }}>
                   <strong>Software Engineer</strong>
@@ -61,7 +59,7 @@ function App() {
                   </a>
                   <br />
                   <br />
-                  <p style={{ maxWidth: '35rem', fontSize: '1.5rem' }}>
+                  <p>
                     Full stack software developer specializing in React,
                     Javascript and Ruby on Rails. Passionate about technology,
                     solving problems, clean data, all things sports and
@@ -71,6 +69,7 @@ function App() {
                 <NavLink to='/portfolio/projects'>
                   <Button
                     color='primary'
+                    className='projects-link'
                     style={{ marginTop: '1rem', fontSize: '1.5rem' }}
                   >
                     View Projects

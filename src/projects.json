@@ -38,19 +38,19 @@
     "name": "Candle Crush",
     "images": [
       {
-        "url": "https://austbuhl.github.io/portfolio/CC/CandleCrushHome.png",
+        "url": "./CC/CandleCrushHome.png",
         "desc": "Homepage"
       },
       {
-        "url": "https://austbuhl.github.io/portfolio/CC/CandleCrushCatalog.png",
+        "url": "./CC/CandleCrushCatalog.png",
         "desc": "Product Catalog"
       },
       {
-        "url": "https://austbuhl.github.io/portfolio/CC/CandleCrushDetail.png",
+        "url": "./CC/CandleCrushDetail.png",
         "desc": "Product Detail Page"
       },
       {
-        "url": "https://austbuhl.github.io/portfolio/CC/CandleCrushCart.png",
+        "url": "./CC/CandleCrushCart.png",
         "desc": "Your Cart"
       }
     ],

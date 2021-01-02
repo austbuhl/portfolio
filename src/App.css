@@ -5,6 +5,18 @@
 
 main {
   text-align: center;
+  margin-top: 3.5em;
+  margin-bottom: 6.5em;
+}
+
+main img {
+  border-radius: 50%;
+  height: 20vh;
+}
+
+main p {
+  max-width: 35rem;
+  font-size: 1.5rem;
 }
 
 #main-container {
