@@ -12,7 +12,7 @@ export const ProjectDetail = ({ project }) => {
   const renderImages = () => {
     return project.images.map((image) => (
       <div>
-        <img className='project-image' src={image.url} />
+        <img className='project-image' src={`.${image.url}`} />
         <p className='legend'>{image.desc}</p>
       </div>
     ))
@@ -39,16 +39,16 @@ export const ProjectDetail = ({ project }) => {
             <a href={project.frontend} target='_blank'>
               FrontEnd
             </a>
-            {' | '}
+
             {project.backend !== '' && (
               <a href={project.backend} target='_blank'>
-                BackEnd
+                {' | '}BackEnd
               </a>
             )}
-            {' | '}
+
             {project.url !== '' && (
               <a href={project.url} target='_blank'>
-                Site
+                {' | '}Site
               </a>
             )}
           </div>
