@@ -37,10 +37,22 @@
     "id": 2,
     "name": "Candle Crush",
     "images": [
-      { "url": "./CC/CandleCrushHome.png", "desc": "Homepage" },
-      { "url": "./CC/CandleCrushCatalog.png", "desc": "Product Catalog" },
-      { "url": "./CC/CandleCrushDetail.png", "desc": "Product Detail Page" },
-      { "url": "./CC/CandleCrushCart.png", "desc": "Your Cart" }
+      {
+        "url": "https://austbuhl.github.io/portfolio/CC/CandleCrushHome.png",
+        "desc": "Homepage"
+      },
+      {
+        "url": "https://austbuhl.github.io/portfolio/CC/CandleCrushCatalog.png",
+        "desc": "Product Catalog"
+      },
+      {
+        "url": "https://austbuhl.github.io/portfolio/CC/CandleCrushDetail.png",
+        "desc": "Product Detail Page"
+      },
+      {
+        "url": "https://austbuhl.github.io/portfolio/CC/CandleCrushCart.png",
+        "desc": "Your Cart"
+      }
     ],
     "backend": "https://github.com/austbuhl/candle-crush-back-end",
     "description": "<p>Candle Crush is an e-commerce app for high-end candles. This is a Single-Page Application built with a React FrontEnd with Material UI Styling, a Rails/PostgreSQL BackEnd and React Router for Client-Side Routing. User auth is done with JSON Web Tokens and localStorage on the client-side alongside BCrypt on the server-side.</p> <br /> <p>When creating an account, user's can choose to create a vendor account or just a basic consumer. Vendors have access to create and sell their own items on the site.  All users can search through the product catalog or filter by scent/price. Each candle has a show page where user's can get some additional information about the product and also leave/read other's ratings and reviews.</p> <br /> <p>The cart features a fully responsive interface enabling user's to add or remove items all the way up until checkout. User's are also able to return products at any time from their profile page.</p>",
