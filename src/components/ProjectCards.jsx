@@ -17,11 +17,14 @@ import {
   SiRails,
   SiRedux,
   SiJavascript,
+  SiTypescript,
   SiGooglemaps,
   SiMaterialUi,
   SiBootstrap,
   SiRuby,
-  SiReactrouter
+  SiReactrouter,
+  SiNodeDotJs,
+  SiStyledComponents
 } from 'react-icons/si'
 import GitHubIcon from '@material-ui/icons/GitHub'
 import WebIcon from '@material-ui/icons/Web'
@@ -63,13 +66,16 @@ const icons = {
   React: <FaReact />,
   Redux: <SiRedux />,
   Javascript: <SiJavascript />,
+  TypeScript: <SiTypescript />,
   Rails: <SiRails />,
   PostgreSQL: <SiPostgresql />,
   'Google Maps API': <SiGooglemaps />,
   'Material UI': <SiMaterialUi />,
   Bootstrap: <SiBootstrap />,
   'Ruby on Rails': <SiRuby />,
-  'React Router': <SiReactrouter />
+  'React Router': <SiReactrouter />,
+  'Node.js': <SiNodeDotJs />,
+  'Styled Components': <SiStyledComponents />
 }
 
 export const ProjectCards = ({ projects }) => {

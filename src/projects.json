@@ -35,6 +35,24 @@
   },
   {
     "id": 2,
+    "name": "Trivial",
+    "images": [
+      { "url": "./Trivial/TrivialQuestion.png", "desc": "Question" },
+      { "url": "./Trivial/TrivialAnswer.png", "desc": "Answer" },
+      { "url": "./Trivial/TrivialLeaderboard.png", "desc": "Leaderboard" }
+    ],
+    "backend": "https://github.com/austbuhl/quiz-backend",
+    "description": "<p>Trivial is a trivia game built with the Open Trivia Database's API. This is a Single-Page Application built with a React-TypeScript FrontEnd with Styled Components and a Node-Express-Postgres BackEnd.</p> <br /> <p>User's can select a difficulty of their choosing and then the game serves up 10 questions via the Open Trivia DB for the user to answer. Once all questions have been answered, a user is able to see how they stack up against others on the leaderboard and if they'd like submit their score.</p>",
+    "frontend": "https://github.com/austbuhl/quiz-ts",
+    "url": "https://trivial-ts.netlify.app/",
+    "tech": "React - TypeScript - Node.js",
+    "stack": {
+      "frontend": ["React", "TypeScript", "Styled Components"],
+      "backend": ["Node.js", "Express", "PostgreSQL", "Sequelize"]
+    }
+  },
+  {
+    "id": 3,
     "name": "Candle Crush",
     "images": [
       { "url": "./CC/CandleCrushHome.png", "desc": "Homepage" },
@@ -59,7 +77,7 @@
     }
   },
   {
-    "id": 3,
+    "id": 4,
     "name": "Stonks.js",
     "images": [
       { "url": "./Stonks/StonksHome.png", "desc": "Homepage" },
@@ -79,7 +97,7 @@
     }
   },
   {
-    "id": 4,
+    "id": 5,
     "name": "Fantasy Fanatics",
     "images": [
       { "url": "./Fantasy/FantasyHome.png", "desc": "Homepage" },
