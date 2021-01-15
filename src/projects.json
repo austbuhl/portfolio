@@ -114,5 +114,49 @@
       "frontend": ["Ruby on Rails", "Bootstrap"],
       "backend": ["Rails", "PostgreSQL", "BCrypt"]
     }
+  },
+  {
+    "id": 6,
+    "name": "Tik Talk",
+    "images": [
+      { "url": "./Fantasy/FantasyHome.png", "desc": "Homepage" },
+      { "url": "./Fantasy/FantasyTeam.png", "desc": "Team Page" },
+      { "url": "./Fantasy/FantasyPlayers.png", "desc": "Players List Page" },
+      { "url": "./Fantasy/FantasyRankings.png", "desc": "Rankings List Page" }
+    ],
+    "backend": "",
+    "description": "<p>Fantasy Fanatics is a Ruby on Rails application that optimizes your fantasy football lineup on a weekly basis. User's can draft and build a team of their favorite players and join a league. Once their team is drafted they can tinker with their lineup manually or have their lineup automatically set based on the consensus analyst rankings for that particular week.</p> <br /> <p>When signing up users have the option to join as a team owner or as an analyst. Analysts are able to login weekly to post their rankings that all other users can see. The multiple user roles were built with a self-referential user model and leverage BCrypt for password protection.</p>",
+    "frontend": "https://github.com/austbuhl/fantasy-fanatics",
+    "url": "",
+    "tech": "MongoDB - Express - React - Node",
+    "stack": {
+      "frontend": [
+        "React",
+        "Javascript",
+        "Material UI",
+        "Styled Components",
+        "Firebase"
+      ],
+      "backend": ["Node.js", "Express", "MongoDB", "Mongoose"]
+    }
+  },
+  {
+    "id": 7,
+    "name": "C-PlusPlus",
+    "images": [
+      { "url": "./Fantasy/FantasyHome.png", "desc": "Homepage" },
+      { "url": "./Fantasy/FantasyTeam.png", "desc": "Team Page" },
+      { "url": "./Fantasy/FantasyPlayers.png", "desc": "Players List Page" },
+      { "url": "./Fantasy/FantasyRankings.png", "desc": "Rankings List Page" }
+    ],
+    "backend": "",
+    "description": "",
+    "frontend": "https://github.com/austbuhl/cplusplus",
+    "url": "",
+    "tech": "Python - Django",
+    "stack": {
+      "frontend": ["Python", "Django"],
+      "backend": ["Django"]
+    }
   }
 ]

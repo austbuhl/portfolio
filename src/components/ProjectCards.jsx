@@ -11,7 +11,7 @@ import {
   Typography,
   Tooltip
 } from '@material-ui/core/'
-import { FaReact } from 'react-icons/fa'
+import { FaReact, FaNode } from 'react-icons/fa'
 import {
   SiPostgresql,
   SiRails,
@@ -23,8 +23,11 @@ import {
   SiBootstrap,
   SiRuby,
   SiReactrouter,
-  SiNodeDotJs,
-  SiStyledComponents
+  SiStyledComponents,
+  SiFirebase,
+  SiMongodb,
+  SiPython,
+  SiDjango
 } from 'react-icons/si'
 import GitHubIcon from '@material-ui/icons/GitHub'
 import WebIcon from '@material-ui/icons/Web'
@@ -74,8 +77,12 @@ const icons = {
   Bootstrap: <SiBootstrap />,
   'Ruby on Rails': <SiRuby />,
   'React Router': <SiReactrouter />,
-  'Node.js': <SiNodeDotJs />,
-  'Styled Components': <SiStyledComponents />
+  'Node.js': <FaNode />,
+  'Styled Components': <SiStyledComponents />,
+  Firebase: <SiFirebase />,
+  MongoDB: <SiMongodb />,
+  Python: <SiPython />,
+  Django: <SiDjango />
 }
 
 export const ProjectCards = ({ projects }) => {
