@@ -155,7 +155,7 @@
     "url": "",
     "tech": "Python - Django",
     "stack": {
-      "frontend": ["Python", "Django"],
+      "frontend": ["Python"],
       "backend": ["Django"]
     }
   }

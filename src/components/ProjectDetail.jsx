@@ -4,7 +4,7 @@ import { Carousel } from 'react-responsive-carousel'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import './ProjectDetail.css'
 import { motion } from 'framer-motion'
-import { Grid, Typography, IconButton } from '@material-ui/core'
+import { Grid, Typography, IconButton, Tooltip } from '@material-ui/core'
 import { animationThree, transition } from '../animations'
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos'
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos'
@@ -43,9 +43,11 @@ export const ProjectDetail = ({ project }) => {
           <div className='project-links'>
             {project.id !== 1 && (
               <NavLink to={`/portfolio/projects/${prevProjectId}`}>
-                <IconButton aria-label='back'>
-                  <ArrowBackIosIcon />
-                </IconButton>
+                <Tooltip title='View Previous'>
+                  <IconButton aria-label='back'>
+                    <ArrowBackIosIcon />
+                  </IconButton>
+                </Tooltip>
               </NavLink>
             )}
 
@@ -67,9 +69,11 @@ export const ProjectDetail = ({ project }) => {
 
             {project.id !== 7 && (
               <NavLink to={`/portfolio/projects/${nextProjectId}`}>
-                <IconButton aria-label='next'>
-                  <ArrowForwardIosIcon />
-                </IconButton>
+                <Tooltip title='View Next'>
+                  <IconButton aria-label='next'>
+                    <ArrowForwardIosIcon />
+                  </IconButton>
+                </Tooltip>
               </NavLink>
             )}
           </div>
