@@ -60,10 +60,10 @@ function App() {
                   <br />
                   <br />
                   <p>
-                    Full stack software developer specializing in React,
-                    Javascript and Ruby on Rails. Passionate about technology,
-                    solving problems, clean data, all things sports and
-                    breakfast burritos.
+                    Full stack software developer specializing in C#/.NET,
+                    React, Javascript and Ruby on Rails. Passionate about
+                    technology, solving problems, clean data, all things sports
+                    and breakfast burritos.
                   </p>
                 </div>
                 <NavLink to='/portfolio/projects'>
